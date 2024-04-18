@@ -11,8 +11,8 @@ public class BankAccount {
      * Default constructor
      */
     public BankAccount() {
-            balance = 0.0;
-        transactionLimit = 10; 
+        balance = 0.0;
+        transactionLimit = 10;
 
     }
 
@@ -26,6 +26,7 @@ public class BankAccount {
     }
 
     public int getNumberTransactions() {
+        // test
         return numberTransactions;
     }
 
@@ -41,7 +42,7 @@ public class BankAccount {
             throw new LimitTransactionException();
         }
 
-        balance = balance + amount ;
+        balance = balance + amount;
         numberTransactions++;
 
     }
